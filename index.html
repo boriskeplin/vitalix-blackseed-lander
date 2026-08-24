@@ -4,117 +4,145 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Vitalix Ethiopian Black Seed Oil — Immune, Gut &amp; Energy Support</title>
-<meta name="description" content="Cold-pressed Ethiopian Black Seed Oil in a daily softgel — for immune strength, an easier gut, and steady all-day energy. 60 softgels. 30-day money-back guarantee.">
+<meta name="description" content="Cold-pressed Ethiopian Black Seed Oil in a daily softgel, naturally rich in thymoquinone — for immune strength, an easier gut, and steady all-day energy. 60 softgels. 30-day money-back guarantee.">
 <style>
   :root{
-    --green:#12402b; --green-2:#1c6b45; --pill:#2f8a5b; --cream:#f5efe2; --paper:#fffdf8;
-    --ink:#1c241f; --muted:#6b7269; --line:#e4ddcb; --gold:#c9a227; --red:#c0392b;
-    --radius:16px;
+    --green:#12402b; --green-2:#1c6b45; --pill:#2f8a5b; --pill-d:#256e48;
+    --cream:#f6f1e6; --paper:#fffdf8; --ink:#1b231e; --muted:#6b7269; --line:#e6ddc9;
+    --gold:#c9a227; --red:#c0392b; --r:16px;
   }
   *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+  html{scroll-behavior:smooth}
   body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-    color:var(--ink);background:var(--cream);line-height:1.5;padding-bottom:76px}
+    color:var(--ink);background:var(--cream);line-height:1.55;padding-bottom:78px}
   img{max-width:100%;display:block}
-  .wrap{max-width:1100px;margin:0 auto;padding:0 16px}
-  .bar{background:var(--green);color:#fff;text-align:center;font-size:13px;font-weight:600;
-    letter-spacing:.3px;padding:9px 12px}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 16px}
+  .narrow{max-width:640px;margin:0 auto}
+  .bar{background:var(--green);color:#fff;text-align:center;font-size:13px;font-weight:600;letter-spacing:.3px;padding:9px 12px}
   .bar b{color:var(--gold)}
   header{position:sticky;top:0;z-index:40;background:var(--paper);border-bottom:1px solid var(--line)}
-  header .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
-  header img{height:30px;width:auto}
+  header .wrap{display:flex;align-items:center;justify-content:space-between;height:58px}
+  header img{height:28px;width:auto}
   header .trust{font-size:12px;color:var(--muted);display:none}
-  @media(min-width:700px){header .trust{display:block}}
+  @media(min-width:720px){header .trust{display:block}}
+  .eyebrow{font-size:12px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:var(--pill-d)}
+  h2.sec{text-align:center;font-size:24px;font-weight:800;letter-spacing:-.4px;margin:6px 0 6px}
+  @media(min-width:720px){h2.sec{font-size:30px}}
+  .lead{text-align:center;color:#4a534c;font-size:15.5px;max-width:600px;margin:0 auto 20px}
+  section{padding:34px 0}
+  section.tint{background:var(--paper)}
 
   /* hero */
-  .hero{padding:22px 0 8px}
+  .hero{padding:22px 0 6px}
   .hero-grid{display:grid;gap:18px}
-  @media(min-width:820px){.hero-grid{grid-template-columns:1fr 1fr;gap:34px;align-items:center}}
-  .shot{background:radial-gradient(circle at 50% 40%, #eef4ee 0%, #dfeadf 70%, #d3e2d3 100%);
-    border-radius:var(--radius);padding:14px;text-align:center}
+  @media(min-width:840px){.hero-grid{grid-template-columns:1fr 1fr;gap:36px;align-items:center}}
+  .shot{background:radial-gradient(circle at 50% 42%,#eef4ee,#dce8dc 70%,#cfe0cf);border-radius:var(--r);padding:14px;text-align:center}
   .shot img{margin:0 auto;max-height:440px;width:auto}
   .stars{color:var(--gold);font-size:15px;letter-spacing:1px}
-  .rating{font-size:13px;color:var(--muted);margin:2px 0 6px}
-  h1{font-size:27px;line-height:1.18;font-weight:800;letter-spacing:-.4px}
-  @media(min-width:820px){h1{font-size:33px}}
-  .sub{color:#42504a;margin:10px 0 14px;font-size:15.5px}
+  .rating{font-size:13px;color:var(--muted);margin:2px 0 8px}
+  h1{font-size:28px;line-height:1.15;font-weight:800;letter-spacing:-.5px}
+  @media(min-width:840px){h1{font-size:35px}}
+  .sub{color:#42504a;margin:11px 0 15px;font-size:15.5px}
   .bul{list-style:none;display:grid;gap:9px;margin:0 0 16px}
   .bul li{display:flex;gap:9px;font-size:14.5px}
   .bul .ck{color:var(--pill);font-weight:800;flex:none}
   .bul b{color:var(--ink)}
 
   /* buy box */
-  .buy{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:14px}
-  .opt{display:flex;align-items:center;gap:12px;border:2px solid var(--line);border-radius:12px;
-    padding:11px 12px;margin-bottom:9px;cursor:pointer;position:relative;background:#fff}
+  .buy{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:14px}
+  .opt{display:flex;align-items:center;gap:12px;border:2px solid var(--line);border-radius:12px;padding:11px 12px;margin-bottom:9px;cursor:pointer;position:relative;background:#fff}
   .opt.sel{border-color:var(--pill);background:#f2faf5}
-  .opt .r{width:18px;height:18px;border-radius:50%;border:2px solid #c3ccc4;flex:none}
-  .opt.sel .r{border-color:var(--pill);background:radial-gradient(circle,var(--pill) 42%,#fff 46%)}
-  .opt .t{flex:1}
-  .opt .t b{font-size:15px}
-  .opt .t small{display:block;color:var(--muted);font-size:12.5px}
-  .opt .p{text-align:right}
-  .opt .p b{font-size:16px}
-  .opt .p s{display:block;color:#9aa39a;font-size:12px}
-  .tag{position:absolute;top:-9px;right:10px;font-size:10.5px;font-weight:800;letter-spacing:.4px;
-    background:var(--pill);color:#fff;border-radius:20px;padding:2px 9px;text-transform:uppercase}
+  .opt .rd{width:18px;height:18px;border-radius:50%;border:2px solid #c3ccc4;flex:none}
+  .opt.sel .rd{border-color:var(--pill);background:radial-gradient(circle,var(--pill) 42%,#fff 46%)}
+  .opt .t{flex:1}.opt .t b{font-size:15px}.opt .t small{display:block;color:var(--muted);font-size:12.5px}
+  .opt .p{text-align:right}.opt .p b{font-size:16px}.opt .p s{display:block;color:#9aa39a;font-size:12px}
+  .tag{position:absolute;top:-9px;right:10px;font-size:10.5px;font-weight:800;letter-spacing:.4px;background:var(--pill);color:#fff;border-radius:20px;padding:2px 9px;text-transform:uppercase}
   .tag.best{background:var(--gold);color:#3a2e05}
-  .cta{display:block;width:100%;border:0;border-radius:12px;background:var(--pill);color:#fff;
-    font-size:17px;font-weight:800;padding:15px;text-align:center;text-decoration:none;cursor:pointer;
-    box-shadow:0 6px 16px -6px rgba(47,138,91,.7);letter-spacing:.2px}
+  .cta{display:block;width:100%;border:0;border-radius:12px;background:var(--pill);color:#fff;font-size:17px;font-weight:800;padding:15px;text-align:center;text-decoration:none;cursor:pointer;box-shadow:0 6px 16px -6px rgba(47,138,91,.7);letter-spacing:.2px}
   .cta:active{transform:translateY(1px)}
   .cta small{display:block;font-weight:600;font-size:12px;opacity:.9;margin-top:2px}
-  .row{display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap;
-    color:var(--muted);font-size:12.5px;margin-top:11px}
+  .rowi{display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap;color:var(--muted);font-size:12.5px;margin-top:11px}
   .pay{height:22px;margin:10px auto 0;display:block;opacity:.9}
-  .instock{display:flex;align-items:center;gap:7px;justify-content:center;font-size:13px;
-    color:#2c7a4d;font-weight:600;margin:10px 0 6px}
+  .instock{display:flex;align-items:center;gap:7px;justify-content:center;font-size:13px;color:#2c7a4d;font-weight:600;margin:10px 0 6px}
   .dot{width:8px;height:8px;border-radius:50%;background:#2c7a4d;box-shadow:0 0 0 4px #2c7a4d22}
 
-  /* stats strip */
-  .stats{background:var(--green);color:#fff;margin-top:20px}
-  .stats .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;padding:20px 16px;text-align:center}
-  .stats b{display:block;font-size:26px;font-weight:800;color:#fff}
+  /* stats */
+  .stats{background:var(--green);color:#fff;padding:0}
+  .stats .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;padding:22px 16px;text-align:center}
+  .stats b{display:block;font-size:27px;font-weight:800;color:#fff}
   .stats span{font-size:11.5px;color:#cfe6d8;line-height:1.3;display:block;margin-top:3px}
-  @media(max-width:560px){.stats .wrap{grid-template-columns:repeat(2,1fr);gap:16px}.stats b{font-size:24px}}
+  @media(max-width:560px){.stats .wrap{grid-template-columns:repeat(2,1fr);gap:16px}}
 
-  /* creative stack */
-  .stack{padding:26px 0}
-  .stack h2{text-align:center;font-size:22px;font-weight:800;margin-bottom:16px;letter-spacing:-.3px}
-  .cards{display:grid;gap:16px;max-width:620px;margin:0 auto}
-  .cards img{border-radius:var(--radius);box-shadow:0 6px 22px -14px rgba(20,40,30,.5);width:100%}
-  .mid-cta{max-width:420px;margin:6px auto}
+  /* generic cards */
+  .grid3{display:grid;gap:14px}
+  @media(min-width:720px){.grid3{grid-template-columns:repeat(3,1fr)}}
+  .card{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:20px;text-align:center}
+  .card .ic{font-size:30px}
+  .card h3{font-size:16px;margin:8px 0 5px}
+  .card p{font-size:13.5px;color:var(--muted)}
+
+  /* creatives */
+  .cards{display:grid;gap:16px;max-width:600px;margin:0 auto}
+  .cards img{border-radius:var(--r);box-shadow:0 6px 22px -14px rgba(20,40,30,.5);width:100%}
+  .mid-cta{max-width:400px;margin:2px auto}
+
+  /* science split */
+  .split{display:grid;gap:20px;align-items:center}
+  @media(min-width:820px){.split{grid-template-columns:1fr 1fr;gap:36px}}
+  .split img{border-radius:var(--r);box-shadow:0 6px 22px -14px rgba(20,40,30,.4)}
+  .split h2{text-align:left;font-size:24px;font-weight:800;margin-bottom:10px;letter-spacing:-.3px}
+  @media(min-width:820px){.split h2{font-size:28px}}
+  .split p{color:#42504a;font-size:15px;margin-bottom:12px}
+  .split ul{list-style:none;display:grid;gap:8px}
+  .split li{display:flex;gap:9px;font-size:14.5px}.split .ck{color:var(--pill);font-weight:800}
+
+  /* comparison */
+  .cmp{max-width:620px;margin:0 auto;background:var(--paper);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+  .cmp .h{display:grid;grid-template-columns:1.6fr 1fr 1fr}
+  .cmp .h div{padding:14px 10px;text-align:center;font-weight:800;font-size:13px}
+  .cmp .h .v{background:var(--green);color:#fff}
+  .cmp .h .o{color:var(--muted)}
+  .cmp .r{display:grid;grid-template-columns:1.6fr 1fr 1fr;border-top:1px solid var(--line)}
+  .cmp .r div{padding:12px 10px;font-size:13.5px;display:flex;align-items:center;justify-content:center;text-align:center}
+  .cmp .r .lab{justify-content:flex-start;font-weight:600;color:var(--ink)}
+  .cmp .yes{color:var(--pill);font-weight:800}.cmp .no{color:#c7503f;font-weight:800}
+  .cmp .r .v{background:#f2faf5}
+
+  /* timeline */
+  .tl{max-width:620px;margin:0 auto;display:grid;gap:12px}
+  .tl .step{background:var(--paper);border:1px solid var(--line);border-left:4px solid var(--pill);border-radius:12px;padding:15px 16px}
+  .tl .wk{font-size:12px;font-weight:800;letter-spacing:.5px;color:var(--pill-d);text-transform:uppercase}
+  .tl h4{font-size:16px;margin:2px 0 5px}
+  .tl p{font-size:13.5px;color:var(--muted)}
+
+  /* reviews */
+  .revs{display:grid;gap:14px}
+  @media(min-width:720px){.revs{grid-template-columns:repeat(3,1fr)}}
+  .rev{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:18px}
+  .rev .st{color:var(--gold);font-size:14px}
+  .rev p{font-size:14px;margin:8px 0 10px;color:#3c453e}
+  .rev .who{font-size:12.5px;color:var(--muted);font-weight:600}
+  .rev .who b{color:var(--ink)}
 
   /* guarantee */
-  .guar{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);
-    max-width:620px;margin:6px auto 0;padding:22px;text-align:center}
-  .guar .seal{font-size:34px}
-  .guar h3{font-size:19px;margin:6px 0 6px}
-  .guar p{color:var(--muted);font-size:14px}
+  .guar{max-width:640px;margin:0 auto;background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:26px;text-align:center}
+  .guar .seal{font-size:38px}.guar h3{font-size:20px;margin:6px 0}.guar p{color:var(--muted);font-size:14px}
 
   /* faq */
-  .faq{max-width:620px;margin:26px auto}
-  .faq h2{text-align:center;font-size:22px;font-weight:800;margin-bottom:14px}
   details{background:var(--paper);border:1px solid var(--line);border-radius:12px;margin-bottom:9px;overflow:hidden}
-  summary{list-style:none;cursor:pointer;padding:14px 16px;font-weight:700;font-size:15px;
-    display:flex;justify-content:space-between;gap:10px}
+  summary{list-style:none;cursor:pointer;padding:14px 16px;font-weight:700;font-size:15px;display:flex;justify-content:space-between;gap:10px}
   summary::-webkit-details-marker{display:none}
   summary::after{content:"+";color:var(--pill);font-weight:800}
   details[open] summary::after{content:"–"}
   details p{padding:0 16px 15px;color:#4b544d;font-size:14px}
 
-  footer{background:var(--green);color:#bcd3c5;text-align:center;font-size:12px;padding:26px 16px;margin-top:30px}
-  footer .disc{max-width:720px;margin:0 auto 10px;line-height:1.6;color:#9fbaab}
+  footer{background:var(--green);color:#bcd3c5;text-align:center;font-size:12px;padding:28px 16px}
+  footer .disc{max-width:740px;margin:0 auto 10px;line-height:1.6;color:#9fbaab;font-size:11px}
 
-  /* sticky buy bar */
-  .sticky{position:fixed;left:0;right:0;bottom:0;z-index:50;background:var(--paper);
-    border-top:1px solid var(--line);padding:9px 12px calc(9px + env(safe-area-inset-bottom));
-    display:flex;align-items:center;gap:12px;box-shadow:0 -6px 20px -12px rgba(0,0,0,.3)}
+  .sticky{position:fixed;left:0;right:0;bottom:0;z-index:50;background:var(--paper);border-top:1px solid var(--line);padding:9px 12px calc(9px + env(safe-area-inset-bottom));display:flex;align-items:center;gap:12px;box-shadow:0 -6px 20px -12px rgba(0,0,0,.3)}
   .sticky img{height:44px;border-radius:8px}
-  .sticky .info{flex:1;min-width:0}
-  .sticky .info b{font-size:13.5px;display:block;line-height:1.2}
-  .sticky .info small{color:var(--muted);font-size:12px}
-  .sticky a{background:var(--pill);color:#fff;font-weight:800;text-decoration:none;border-radius:10px;
-    padding:12px 16px;font-size:14px;white-space:nowrap}
+  .sticky .info{flex:1;min-width:0}.sticky .info b{font-size:13.5px;display:block;line-height:1.2}.sticky .info small{color:var(--muted);font-size:12px}
+  .sticky a{background:var(--pill);color:#fff;font-weight:800;text-decoration:none;border-radius:10px;padding:12px 16px;font-size:14px;white-space:nowrap}
 </style>
 </head>
 <body>
@@ -133,38 +161,28 @@
     <div class="stars">★★★★★</div>
     <div class="rating">Rated 4.8 / 5 · &ldquo;Excellent&rdquo; · 95,000+ happy customers</div>
     <h1>Vitalix Ethiopian Black&nbsp;Seed&nbsp;Oil</h1>
-    <p class="sub">The ancient &ldquo;seed of blessing,&rdquo; cold-pressed into one daily softgel —
-      for a stronger immune system, an easier gut, and steady, all-day energy.</p>
+    <p class="sub">The &ldquo;seed of blessing,&rdquo; cold-pressed into one daily softgel — naturally rich
+      in thymoquinone to support a stronger immune system, an easier gut, and steady, all-day energy.</p>
     <ul class="bul">
-      <li><span class="ck">✓</span><span><b>Immune Support</b> — rich in thymoquinone, the compound black seed is prized for.</span></li>
-      <li><span class="ck">✓</span><span><b>Gut &amp; Digestion</b> — helps calm bloating and support a balanced, comfortable gut.</span></li>
+      <li><span class="ck">✓</span><span><b>Immune Support</b> — thymoquinone helps your body defend itself.</span></li>
+      <li><span class="ck">✓</span><span><b>Gut &amp; Digestion</b> — eases bloating and supports a calm, balanced gut.</span></li>
       <li><span class="ck">✓</span><span><b>Natural Energy</b> — steady all day, without the caffeine crash.</span></li>
       <li><span class="ck">✓</span><span><b>Pure &amp; Simple</b> — 100% Ethiopian black seed oil, 60 softgels, no fillers.</span></li>
     </ul>
-
     <div class="buy" id="buy">
-      <label class="opt" onclick="pick(this)">
-        <span class="r"></span>
+      <label class="opt" onclick="pick(this)"><span class="rd"></span>
         <span class="t"><b>1 Bottle</b><small>30-day supply</small></span>
-        <span class="p"><b>$39.99</b><s>$59.99</s></span>
-      </label>
-      <label class="opt sel" onclick="pick(this)">
-        <span class="tag">Most Popular · BOGO</span>
-        <span class="r"></span>
+        <span class="p"><b>$39.99</b><s>$59.99</s></span></label>
+      <label class="opt sel" onclick="pick(this)"><span class="tag">Most Popular · BOGO</span><span class="rd"></span>
         <span class="t"><b>Buy 1, Get 1 FREE</b><small>2 bottles · $20.00 each</small></span>
-        <span class="p"><b>$39.99</b><s>$119.98</s></span>
-      </label>
-      <label class="opt" onclick="pick(this)">
-        <span class="tag best">Best Value</span>
-        <span class="r"></span>
+        <span class="p"><b>$39.99</b><s>$119.98</s></span></label>
+      <label class="opt" onclick="pick(this)"><span class="tag best">Best Value</span><span class="rd"></span>
         <span class="t"><b>Buy 2, Get 2 FREE</b><small>4 bottles · $19.99 each</small></span>
-        <span class="p"><b>$79.98</b><s>$239.96</s></span>
-      </label>
-
+        <span class="p"><b>$79.98</b><s>$239.96</s></span></label>
       <div class="instock"><span class="dot"></span> In stock — ships free within 24 hours</div>
       <a class="cta" href="#" id="addcta">ADD TO CART — $39.99 <small>Buy 1 Get 1 Free · Free Shipping</small></a>
-      <img class="pay" src="https://cdn.shopify.com/s/files/1/0688/5782/3371/files/payment_icons.webp" alt="Visa, Mastercard, Amex, PayPal, Apple Pay, Google Pay" onerror="this.style.display='none'">
-      <div class="row"><span>🔒 Secure checkout</span><span>🚚 Free shipping</span><span>↩ 30-day guarantee</span></div>
+      <img class="pay" src="https://cdn.shopify.com/s/files/1/0688/5782/3371/files/payment_icons.webp" alt="Visa · Mastercard · Amex · PayPal · Apple Pay · Google Pay" onerror="this.style.display='none'">
+      <div class="rowi"><span>🔒 Secure checkout</span><span>🚚 Free shipping</span><span>↩ 30-day guarantee</span></div>
     </div>
   </div>
 </div></div></section>
@@ -177,62 +195,141 @@
   <div><b>78%</b><span>felt reduced markers of inflammation</span></div>
 </div></section>
 
-<!-- CREATIVE STACK -->
-<section class="stack"><div class="wrap">
-  <h2>Why 95,000+ people switched to Vitalix</h2>
+<!-- PROBLEM -->
+<section><div class="wrap">
+  <p class="eyebrow" style="text-align:center">Sound familiar?</p>
+  <h2 class="sec">Run-down, bloated, and tired isn&rsquo;t &ldquo;just aging&rdquo;</h2>
+  <p class="lead">Frequent colds, a gut that feels off, aches that linger, energy that fades by mid-afternoon —
+    these are signs your body&rsquo;s natural defenses and gut balance need real support, not another quick fix.</p>
   <div class="cards">
-    <img src="assets/bs12.jpg" alt="Tired of gut troubles? Strengthen immune &amp; digestive health naturally" loading="lazy">
+    <img src="assets/bs5.jpg" alt="Frequent colds aren't normal — your immune system is calling for help" loading="lazy">
     <img src="assets/bs3.jpg" alt="Bloating is a sign your gut needs support — feel comfortable again" loading="lazy">
-    <img src="assets/bs5.jpg" alt="Frequent colds aren't normal — reclaim your defense" loading="lazy">
-    <a class="cta mid-cta" href="#buy">Try Vitalix Risk-Free →</a>
-    <img src="assets/bs9.jpg" alt="Dealing with chronic pain? Feel better naturally with Ethiopian black seed oil" loading="lazy">
-    <img src="assets/bs11.jpg" alt="Waking up tired? Support all-day energy with pure Ethiopian black seed oil" loading="lazy">
-    <img src="assets/bs6.jpg" alt="Struggling with digestion or immunity? Balance starts with pure Ethiopian black seed oil" loading="lazy">
+    <img src="assets/bs11.jpg" alt="Waking up tired? You don't have to settle for low energy" loading="lazy">
+  </div>
+</div></section>
+
+<!-- SOLUTION / SCIENCE -->
+<section class="tint"><div class="wrap"><div class="split">
+  <img src="assets/bs6.jpg" alt="Struggling with digestion or immunity? Balance starts with pure Ethiopian black seed oil" loading="lazy">
+  <div>
+    <p class="eyebrow">The seed of blessing</p>
+    <h2>One ancient seed. One daily softgel.</h2>
+    <p>Black seed (<em>Nigella sativa</em>) has been treasured across Ethiopia, the Middle East and North Africa
+      for over 2,000 years. Its power comes from <b>thymoquinone</b> — the naturally-occurring compound black
+      seed is prized for. Vitalix cold-presses pure Ethiopian black seed oil into an easy softgel, so you get it
+      daily with zero aftertaste.</p>
+    <ul>
+      <li><span class="ck">✓</span> 100% pure Ethiopian black seed oil — single ingredient, no fillers</li>
+      <li><span class="ck">✓</span> Naturally rich in thymoquinone</li>
+      <li><span class="ck">✓</span> Cold-pressed &amp; sealed in a softgel — no taste, no mess</li>
+      <li><span class="ck">✓</span> 60 softgels — a full 30-day supply</li>
+    </ul>
+  </div>
+</div></div></section>
+
+<!-- WHAT IT SUPPORTS -->
+<section><div class="wrap">
+  <h2 class="sec">What one softgel a day supports</h2>
+  <div class="grid3" style="max-width:820px;margin:0 auto">
+    <div class="card"><div class="ic">🛡️</div><h3>Immune Defense</h3><p>Give your body&rsquo;s natural defenses the daily backup they&rsquo;re asking for.</p></div>
+    <div class="card"><div class="ic">🌿</div><h3>Gut &amp; Digestion</h3><p>Help calm bloating and keep your gut balanced and comfortable.</p></div>
+    <div class="card"><div class="ic">⚡</div><h3>Steady Energy</h3><p>Even, all-day energy and clearer focus — no caffeine, no crash.</p></div>
+  </div>
+</div></section>
+
+<!-- COMPARISON -->
+<section class="tint"><div class="wrap">
+  <h2 class="sec">Vitalix vs. ordinary black seed brands</h2>
+  <p class="lead">Not all black seed oil is equal. Here&rsquo;s what sets Vitalix apart.</p>
+  <div class="cmp">
+    <div class="h"><div>&nbsp;</div><div class="v">Vitalix</div><div class="o">Others</div></div>
+    <div class="r"><div class="lab">Pure Ethiopian black seed source</div><div class="v yes">✓</div><div class="no">✕</div></div>
+    <div class="r"><div class="lab">Cold-pressed to protect thymoquinone</div><div class="v yes">✓</div><div class="no">✕</div></div>
+    <div class="r"><div class="lab">Single ingredient — no fillers or blends</div><div class="v yes">✓</div><div class="no">✕</div></div>
+    <div class="r"><div class="lab">Easy softgel — zero aftertaste</div><div class="v yes">✓</div><div class="no">✕</div></div>
+    <div class="r"><div class="lab">Money-back guarantee</div><div class="v yes">✓</div><div class="no">✕</div></div>
+  </div>
+  <a class="cta mid-cta" href="#buy" style="margin-top:20px">Try Vitalix Risk-Free →</a>
+</div></section>
+
+<!-- PROOF STACK -->
+<section><div class="wrap">
+  <h2 class="sec">Why 95,000+ people made the switch</h2>
+  <div class="cards">
     <img src="assets/bs1.jpg" alt="Real results backed by research — 89% improved immune function" loading="lazy">
     <img src="assets/bs2.jpg" alt="Daily pain and bloating, finally gone — customer review" loading="lazy">
     <img src="assets/bs4.jpg" alt="Years of fatigue, gone in weeks — customer review" loading="lazy">
-    <a class="cta mid-cta" href="#buy">Claim Your Buy 1 Get 1 Free →</a>
-    <img src="assets/bs14.jpg" alt="Wake up energized, stay energized — harness the power of Ethiopian black seed oil" loading="lazy">
-    <img src="assets/bs15.jpg" alt="Still struggling with inflammation? Address it at the source with black seed oil" loading="lazy">
-    <img src="assets/bs7.jpg" alt="Real results — 89% immune boost, 87% gut improvement, 82% more energy" loading="lazy">
+    <img src="assets/bs14.jpg" alt="Wake up energized, stay energized with Ethiopian black seed oil" loading="lazy">
   </div>
+</div></section>
 
+<!-- TIMELINE -->
+<section class="tint"><div class="wrap">
+  <h2 class="sec">What to expect</h2>
+  <p class="lead">Black seed oil works with your body, gently and consistently. Here&rsquo;s the typical journey.</p>
+  <div class="tl">
+    <div class="step"><div class="wk">Week 1–2 · Settling in</div><h4>Your gut starts to calm</h4><p>Many people notice easier digestion and less bloating, and their energy stops dipping so hard in the afternoon.</p></div>
+    <div class="step"><div class="wk">Week 3–4 · Building</div><h4>Steadier energy &amp; fewer off-days</h4><p>Daily thymoquinone builds up. Energy feels more even, focus sharper, and sick days feel further apart.</p></div>
+    <div class="step"><div class="wk">Week 5–8 · Momentum</div><h4>Immune &amp; comfort support hits stride</h4><p>With consistent use, your defenses feel more resilient and everyday aches and bloating bother you less.</p></div>
+    <div class="step"><div class="wk">Week 9–12+ · Your new normal</div><h4>Feeling like yourself again</h4><p>Steady energy, a comfortable gut, and daily immune support become simply how you feel — from one softgel a day.</p></div>
+  </div>
+</div></section>
+
+<!-- REVIEWS -->
+<section><div class="wrap">
+  <h2 class="sec">Real people, real relief</h2>
+  <div class="revs narrow" style="max-width:960px">
+    <div class="rev"><div class="st">★★★★★</div><p>&ldquo;My stomach is finally calm. No more bloating after every meal, and I&rsquo;m not dragging by 3pm anymore.&rdquo;</p><div class="who"><b>Ethan M.</b> · Verified Customer</div></div>
+    <div class="rev"><div class="st">★★★★★</div><p>&ldquo;My energy came back and my head feels clear. I wake up actually refreshed for the first time in years.&rdquo;</p><div class="who"><b>Sarah M.</b> · Verified Customer</div></div>
+    <div class="rev"><div class="st">★★★★★</div><p>&ldquo;I used to catch every cold going around. This past season I sailed right through. I&rsquo;m a believer.&rdquo;</p><div class="who"><b>Robert R.</b> · Verified Customer</div></div>
+  </div>
+  <a class="cta mid-cta" href="#buy" style="margin-top:22px">Claim Your Buy 1 Get 1 Free →</a>
+</div></section>
+
+<!-- GUARANTEE -->
+<section class="tint"><div class="wrap">
   <div class="guar">
     <div class="seal">🛡️</div>
     <h3>30-Day Money-Back Guarantee</h3>
-    <p>Try Vitalix for a full 30 days. If you don&rsquo;t feel the difference, email us and we&rsquo;ll
-      refund every penny — no questions asked.</p>
+    <p>Try Vitalix for a full 30 days. If you don&rsquo;t feel the difference, email us and we&rsquo;ll refund
+      every penny — you don&rsquo;t even need to send the bottle back.</p>
   </div>
 </div></section>
 
+<!-- URGENCY -->
+<section><div class="wrap"><div class="cards">
+  <img src="assets/bs7.jpg" alt="Real results — 89% immune boost, 87% gut improvement, 82% more energy — BOGO ends soon" loading="lazy">
+</div></div></section>
+
 <!-- FAQ -->
-<section class="faq"><div class="wrap">
-  <h2>Questions, answered</h2>
+<section class="tint"><div class="wrap narrow">
+  <h2 class="sec">Questions, answered</h2>
   <details open><summary>What is Ethiopian black seed oil?</summary>
-    <p>Black seed (Nigella sativa) has been used for over 2,000 years across Ethiopia, the Middle East and
-      North Africa. Vitalix cold-presses it into pure softgels so you get the naturally-occurring
-      thymoquinone without any aftertaste.</p></details>
+    <p>Black seed (Nigella sativa) has been used for over 2,000 years across Ethiopia, the Middle East and North
+      Africa. Vitalix cold-presses pure Ethiopian black seed oil into softgels so you get its naturally-occurring
+      thymoquinone daily — with no aftertaste.</p></details>
   <details><summary>How do I take it?</summary>
-    <p>Take one softgel daily with a glass of water, ideally with a meal. That&rsquo;s it — one bottle is a
-      full 30-day supply (60 softgels).</p></details>
+    <p>One softgel a day with a glass of water, ideally with a meal. One bottle is a full 30-day supply (60 softgels).</p></details>
   <details><summary>How soon will I notice a difference?</summary>
-    <p>Everyone is different. Many people notice easier digestion and steadier energy within the first
-      couple of weeks, with immune and comfort benefits building over 30–60 days of daily use.</p></details>
-  <details><summary>Is it safe? Any fillers?</summary>
-    <p>Vitalix is 100% pure Ethiopian black seed oil — no artificial fillers or binders. As with any
-      supplement, if you&rsquo;re pregnant, nursing or on medication, check with your doctor first.</p></details>
+    <p>Everyone&rsquo;s different. Many people notice easier digestion and steadier energy within the first couple
+      of weeks, with immune and comfort benefits building over 30–60 days of daily use.</p></details>
+  <details><summary>Is it pure? Any fillers?</summary>
+    <p>Yes — 100% pure Ethiopian black seed oil, single ingredient, no artificial fillers or binders. If you&rsquo;re
+      pregnant, nursing or on medication, check with your doctor first.</p></details>
+  <details><summary>How is this different from cheap black seed capsules?</summary>
+    <p>Many use diluted oil or heat processing that strips the active compounds. Vitalix uses pure Ethiopian black
+      seed, cold-pressed to protect the thymoquinone, sealed in an easy softgel.</p></details>
   <details><summary>What&rsquo;s the guarantee?</summary>
-    <p>Every order is covered by our 30-day money-back guarantee. If it&rsquo;s not for you, we&rsquo;ll
-      refund you in full.</p></details>
+    <p>Every order is covered by our 30-day money-back guarantee. If it&rsquo;s not for you, we&rsquo;ll refund you in full.</p></details>
 </div></section>
 
 <footer>
-  <p class="disc">These statements have not been evaluated by the Food and Drug Administration. This product
-    is not intended to diagnose, treat, cure or prevent any disease. Results vary from person to person.</p>
+  <p class="disc">These statements have not been evaluated by the Food and Drug Administration. This product is
+    not intended to diagnose, treat, cure or prevent any disease. Individual results may vary; testimonials
+    reflect individual experiences and are not guaranteed outcomes.</p>
   <p>© Vitalix. All rights reserved.</p>
 </footer>
 
-<!-- STICKY BUY BAR -->
 <div class="sticky">
   <img src="assets/bottle.jpg" alt="">
   <div class="info"><b>Ethiopian Black Seed Oil</b><small>Buy 1 Get 1 Free · $39.99</small></div>
@@ -243,10 +340,8 @@
   function pick(el){
     document.querySelectorAll('.opt').forEach(o=>o.classList.remove('sel'));
     el.classList.add('sel');
-    var price=el.querySelector('.p b').textContent;
-    var label=el.querySelector('.t b').textContent;
-    document.getElementById('addcta').innerHTML='ADD TO CART — '+price+
-      '<small>'+label+' · Free Shipping</small>';
+    var price=el.querySelector('.p b').textContent, label=el.querySelector('.t b').textContent;
+    document.getElementById('addcta').innerHTML='ADD TO CART — '+price+'<small>'+label+' · Free Shipping</small>';
   }
 </script>
 </body>
